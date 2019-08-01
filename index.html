@@ -5,6 +5,100 @@
 		<!-- <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" /> -->
 		<title>康哥</title>
 		<link rel="stylesheet" type="text/css" href="css/jack.css"/>
+		<style type="text/css">
+			*{
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				background: #eee;
+			}
+			
+			@keyframes x{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			
+			.ba{
+				/* border: 1px solid hotpink; */
+				width: 400px;
+				height: 400px;
+				border-radius: 200px;
+				position: relative;
+				overflow: hidden;
+				animation: x 10s infinite linear;
+				box-shadow: 0px 0px 18px 9px rgba(156,156,156,1);
+			}
+			.ba>div:first-child{
+				
+				width: 50%;
+				height: 100%;
+				position: absolute;
+				left: 0;
+				background: black ;
+			}
+			.ba>div:nth-child(2){
+				
+				width: 50%;
+				height: 100%;
+				position: absolute;
+				right: 0;
+				background: white;
+			}
+			.ba>div:nth-child(3){
+				/* border: 10px solid yellow; */
+				position: absolute;
+				height: 200px;
+				width: 200px;
+				left: 50%;
+				margin-left: -100px;
+				border-radius: 50%;
+				background: black;
+			}
+			.ba>div:nth-child(4){
+				position: absolute;
+				height: 200px;
+				width: 200px;
+				left: 50%;
+				bottom: 0;
+				margin-left: -100px;
+				border-radius: 50%;
+				background: white ;
+			}
+			.ba>div:nth-child(5){
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				left: 50%;
+				top:75px;
+				margin-left: -25px;
+				border-radius: 50%;
+				background: white;
+			}
+			.ba>div:nth-child(6){
+				position: absolute;
+				height: 50px;
+				width: 50px;
+				left: 50%;
+				bottom:75px;
+				margin-left: -25px;
+				border-radius: 50%;
+				background: black;
+			}
+			#ba-container{
+				 /* border: 10px solid red; */
+				 margin: auto;
+				 height: 100vh;/* viewpoint height */
+				 display: flex;
+				 justify-content: center;
+				 align-items: center;
+				 flex-direction: column;
+			}
+			#八卦-描述{
+				margin-top: 2em;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="ba-container">
